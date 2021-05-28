@@ -1,0 +1,48 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background:gray;
+}
+
+.container{
+	position:relative;
+	padding: 100px 150px;
+}
+
+.container h2{
+	font-size: 40px;
+	font-weight: 500;
+	margin-bottom: 40px;
+	color: white; 
+}
+.container p{
+	font-size:20px;
+	color:white;
+}
+
+.scrollTop{
+	position:fixed;
+	height: 60px;
+	width:60px;
+	bottom:800px;
+	right: 40px;
+	background:#fff url('index.png');
+	border-radius:50%;
+	background-size: 40px;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 1000000;
+	cursor: pointer;
+	visibility: hidden;
+	opacity: 0;
+	transition:.4s;
+}
+
+.scrollTop.active{
+bottom:40px;
+visibility: visible;
+opacity: 1;
+}
